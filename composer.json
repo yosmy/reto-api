@@ -1,0 +1,45 @@
+{
+    "name": "reto",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "mongodb/mongodb": "~1",
+        "ext-json": "*",
+        "ext-mongodb": "*",
+        "ext-pcre": "*",
+        "symsonte/framework": "@dev",
+        "yosmy/ownership": "@dev",
+        "yosmy/upgrade": "@dev",
+        "yosmy/user-api": "@dev",
+        "yosmy/phone": "@dev",
+        "yosmy/error": "@dev",
+        "respect/validation": "^1.1"
+    },
+    "require-dev": {
+        "symfony/debug": "~3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reto\\": [
+                "setup",
+                "src/bet",
+                "src/result",
+                "src/user"
+            ],
+            "Reto\\Cli\\": [
+                "src/cli"
+            ],
+            "Reto\\Http\\": [
+                "src/http"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
